@@ -61,7 +61,10 @@ export default function App() {
           {steps.map((step, index) => (
             <li
               key={index}
-              className={\`px-4 py-3 rounded-xl flex items-center justify-between transition-all ${index === currentStep ? "bg-[#4a4a4a] text-white" : "text-gray-400"}`}
+              className={`px-4 py-3 rounded-xl flex items-center justify-between transition-all ${
+                index === currentStep ? 'bg-[\\#4a4a4a] text-white' : 'text-gray-400'
+              }`}
+              }`}
             >
               <span className="text-base font-semibold">{step.label}</span>
               {responses[index] && (
