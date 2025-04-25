@@ -64,9 +64,6 @@ export default function App() {
               className={`px-4 py-3 rounded-xl flex items-center justify-between transition-all ${
                 index === currentStep ? "bg-gray-700 text-white" : "text-gray-400"
               }`}
-              
-              }`}
-              }`}
             >
               <span className="text-base font-semibold">{step.label}</span>
               {responses[index] && (
@@ -76,7 +73,9 @@ export default function App() {
           ))}
         </ul>
         <button
-          className={\`mt-8 w-full text-lg py-3 rounded-full transition-all \${listComplete ? "bg-white text-black" : "bg-black text-white opacity-60 cursor-not-allowed"}\`}
+          className={`mt-8 w-full text-lg py-3 rounded-full transition-all ${
+            listComplete ? "bg-white text-black" : "bg-black text-white opacity-60 cursor-not-allowed"
+          }`}
           disabled={!listComplete}
         >
           {listComplete ? "Sent" : "Send"}
