@@ -67,7 +67,9 @@ export default function App() {
             >
               <span className="text-base font-semibold">{step.label}</span>
               {responses[index] && (
-                <span className="w-5 h-5 bg-green-400 rounded-full flex items-center justify-center text-sm">✔</span>
+                <span className="w-5 h-5 bg-green-400 rounded-full flex items-center justify-center text-sm">
+                  ✔
+                </span>
               )}
             </li>
           ))}
